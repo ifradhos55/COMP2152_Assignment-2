@@ -223,12 +223,13 @@ if __name__ == "__main__":
         print("Invalid input. Please enter a valid integer.")
 
 
-# Q5: New Feature Proposal
-# I would add a Port Risk Classifier feature that categorizes each open port by
-# security risk level (HIGH, MEDIUM, or LOW). It would use a nested if-statement
-# to check if the port number belongs to high-risk services (FTP, SSH, Telnet,
-# RDP — ports 21, 22, 23, 3389), medium-risk services (SMTP, POP3, IMAP, MySQL
-# — ports 25, 110, 143, 3306), or otherwise classify it as low risk. This would
-# help system administrators quickly identify which open ports need immediate
-# attention during a security audit.
-# Diagram: See diagram_101587843.png in the repository root
+"""
+I would add a Port Risk Classifier feature that categorizes each open port by
+ security risk level (HIGH, MEDIUM, or LOW). It would use a nested if-statement
+ to check if the port number belongs to high-risk services (FTP, SSH, Telnet,
+ RDP — ports 21, 22, 23, 3389), medium-risk services (SMTP, POP3, IMAP, MySQL
+ — ports 25, 110, 143, 3306), or otherwise classify it as low risk. This would
+ help system administrators quickly identify which open ports need immediate
+ attention during a security audit.
+ Diagram: See diagram_101587843.png in the repository root
+"""
