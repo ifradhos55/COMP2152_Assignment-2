@@ -52,10 +52,11 @@ class NetworkTool:
 
     @target.setter
     def target(self, value):
-        if value == "":
+        if not value:
             print("Error: Target cannot be empty")
-        else:
-            self.__target = value
+            return
+        
+        self.__target = value
 
     def __del__(self):
         print("NetworkTool instance destroyed")
@@ -229,4 +230,3 @@ if __name__ == "__main__":
 # help system administrators quickly identify which open ports need immediate
 # attention during a security audit.
 # Diagram: See diagram_101587843.png in the repository root
-
